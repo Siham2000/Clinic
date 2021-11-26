@@ -1,0 +1,92 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.doctor {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  background-image: url(../../images/Mask\ Group\ 4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 500px;
+  margin-bottom: 20px;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+.doctor img {
+  position: relative;
+  height: 500px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.doctor .name {
+  font-size: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.doctor .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.doctor .title {
+  font-size: 20px;
+  color: #11d0e2;
+  margin-bottom: 10px;
+}
+.doctor .text {
+  font-size: 18px;
+  letter-spacing: 1.1px;
+  width: 70%;
+  line-height: 1.5;
+}
+
+@media (max-width: 950px) {
+  .doctor {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    height: fit-content;
+  }
+
+  .doctor img {
+    height: 300px;
+  }
+
+  .doctor .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .doctor .name {
+    font-size: 30px;
+  }
+  .doctor .title {
+    font-size: 18px;
+  }
+  .doctor .text {
+    font-size: 14px;
+    letter-spacing: 1.1px;
+    width: 60%;
+    line-height: 1.5;
+  }
+
+  .doctor .doc-button {
+    font-size: 14px;
+    margin: 10px;
+  }
+}

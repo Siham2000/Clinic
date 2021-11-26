@@ -1,0 +1,111 @@
+.wrraper {
+  height: 100vh;
+  width: 100vw;
+  background-color: #e1f1f3;
+  padding-bottom: 5px;
+}
+.appointment {
+  display: grid;
+  grid-template-rows: 150px 200px;
+  background-color: #e1f1f3;
+  width: 100vw;
+}
+
+.appointment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 380px;
+  width: 60%;
+  padding: 10%;
+  padding-top: 12%;
+}
+
+.appointment-container .field {
+  margin: 10px auto;
+}
+
+.appointment-container .fields {
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+}
+
+.appointment-container .book-btn {
+  background-color: #1caa8e;
+  color: white;
+  width: 40%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  margin: 20px auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: "pointer";
+}
+.appointment-container .time-cards {
+  background-color: #1caa8e;
+}
+.appointment-container .picked-card {
+  background-color: #297263;
+}
+
+.fields-width {
+  width: "60%";
+  margin: 15px;
+}
+
+.field.field-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1115px) {
+  .appointment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .appointment-container {
+    display: block;
+    margin: 20px auto;
+    margin-left: auto;
+  }
+  .appointment-container .fields {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .fields-width {
+    width: "100%";
+    margin: 15px;
+  }
+}
+
+@media (max-width: 962px) {
+  .appointment-container .fields {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .appointment-container {
+    margin: 0 20px;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 962px) {
+  .appointment-container .fields {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .field {
+    margin-top: 12px;
+  }
+}

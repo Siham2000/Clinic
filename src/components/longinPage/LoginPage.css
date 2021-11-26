@@ -1,0 +1,34 @@
+.tab-container {
+  width: 350px;
+
+  margin: 20px auto;
+}
+
+.signin-btn {
+  background-color: #1caa8e;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  margin: 15px auto;
+  cursor: pointer;
+}
+.singin-paper {
+  width: 350;
+}
+
+.goBack:hover {
+  border-bottom: 1px solid #1caa8e;
+}
+@media (max-width: 360px) {
+  .tab-container {
+    width: 280px;
+
+    margin: 20px auto;
+  }
+  .singin-paper {
+    width: 280;
+  }
+}

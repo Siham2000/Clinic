@@ -1,0 +1,85 @@
+.contactUs {
+  background-image: url(../../images/Mask\ Group\ 4.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  padding: 20px;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contactUs h1 {
+  color: #13d1d3;
+  margin: 15px;
+  padding: 3px;
+  font-size: 50px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputs input,
+.inputs textarea {
+  width: 900px;
+  margin: 10px;
+  height: 50px;
+  background-color: transparent;
+  padding: 8px;
+  border: 1px #13d1d3 solid;
+  color: white;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-weight: bolder;
+  color: white;
+}
+
+.inputs input:focus,
+.inputs textarea:focus {
+  outline: none;
+}
+
+.inputs textarea {
+  height: 100px;
+}
+
+.contactUs .contactUsDetails .submitBtn {
+  background: linear-gradient(to right, #19d3ae, #0fcfec);
+  margin-top: 10px;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 4px;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 952px) {
+  .inputs input,
+  .inputs textarea {
+    width: 500px;
+    margin: 10px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 547px) {
+  .inputs input,
+  .inputs textarea {
+    width: 350px;
+  }
+}
+
+@media (max-width: 377px) {
+  .inputs input,
+  .inputs textarea {
+    width: fit-content;
+  }
+}

@@ -1,0 +1,21 @@
+.notFound {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  text-align: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+.notFound h1 {
+  font-size: 200px;
+  font-weight: 900;
+}
+.notFound h2 {
+  font-weight: 800;
+  margin: 15px auto;
+}
+.notFound {
+  font-weight: 700;
+}

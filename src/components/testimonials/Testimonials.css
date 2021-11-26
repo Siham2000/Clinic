@@ -1,0 +1,52 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.testimonial {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.testimonial h1 {
+  color: #13d1cf;
+  margin: 20px;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.testimonial h4 {
+  margin: 20px;
+}
+
+.testimonialDetails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+.patientinfo {
+  text-align: center;
+}
+.testimonial .text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media (max-width: 1090px) {
+  .testimonialDetails {
+    grid-template-columns: 1fr 1fr;
+  }
+  .testimonial h4 {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 740px) {
+  .testimonialDetails {
+    grid-template-columns: 1fr;
+  }
+}
