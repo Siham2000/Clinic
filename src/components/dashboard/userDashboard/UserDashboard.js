@@ -37,7 +37,7 @@ const UserDashboard = () => {
   ];
   return (
     <>
-      <Dashboard appointments={appointments} />;
+      <Dashboard appointments={appointments} />
     </>
   );
 };

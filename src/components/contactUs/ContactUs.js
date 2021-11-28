@@ -2,9 +2,17 @@ import React, { useRef } from "react";
 import "./ContactUs.css";
 import Button from "@mui/material/Button";
 import emailjs from "emailjs-com";
+import swal from "sweetalert";
+import Done from "@material-ui/icons/Check";
+
 const ContactUs = () => {
   const form = useRef();
-
+  const sweet = () => {
+    swal({
+      icon: "success",
+      title: "Done",
+    });
+  };
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -22,7 +30,10 @@ const ContactUs = () => {
         (error) => {
           console.log(error.text);
         }
-      );
+      )
+      .then(() => {
+        sweet();
+      });
   };
 
   return (
